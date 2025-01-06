@@ -66,7 +66,7 @@ Use the keyboard arrows to select one of these suggested items and then press En
 * By default, the query table shows an expanded view that lists every metric and its current value. Click the *˅* down arrowhead to minimize the expanded view for a query.
 ====
 
-. Optional: The page URL now contains the queries you ran. To use this set of queries again in the future, save this URL.
+. Optional: Save the page URL to use this set of queries again in the future.
 
 . Explore the visualized metrics. Initially, all metrics from all enabled queries are shown on the plot. Select which metrics are shown by performing any of the following actions:
 +
