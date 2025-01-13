@@ -8,9 +8,9 @@
 
 You can configure Alertmanager to send notifications. Customize where and how Alertmanager sends notifications about default platform alerts by editing the default configuration in the `alertmanager-main` secret in the `openshift-monitoring` namespace.
 
-[IMPORTANT]
+[NOTE]
 ====
-Alertmanager does not send notifications by default. It is recommended to configure Alertmanager to receive notifications by setting up notifications details in the `alertmanager-main` secret configuration file.
+All features of a supported version of upstream Alertmanager are also supported in an OpenShift Alertmanager configuration. To check all the configuration options of a supported version of upstream Alertmanager, see link:https://prometheus.io/docs/alerting/0.26/configuration/[Alertmanager configuration] (Prometheus documentation).
 ====
 
 .Prerequisites

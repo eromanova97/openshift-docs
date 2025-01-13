@@ -8,6 +8,11 @@ toc::[]
 
 You can configure a local or external Alertmanager instance to route alerts from Prometheus to endpoint receivers. You can also attach custom labels to all time series and alerts to add useful metadata information.
 
+[NOTE]
+====
+User-defined routing is scoped to the namespace in which the resource is defined. For example, a routing configuration in namespace `ns1` only applies to `PrometheusRules` resources in the same namespace.
+====
+
 //Configuring external Alertmanager instances
 include::modules/monitoring-configuring-external-alertmanagers.adoc[leveloffset=1,tags=**;!CPM;UWM]
 
@@ -19,8 +24,54 @@ include::modules/monitoring-adding-a-secret-to-the-alertmanager-configuration.ad
 //Attaching additional labels to your time series and alerts
 include::modules/monitoring-attaching-additional-labels-to-your-time-series-and-alerts.adoc[leveloffset=+1,tags=**;!CPM;UWM]
 
-[role="_additional-resources"]
-.Additional resources
+// [role="_additional-resources"]
+// .Additional resources
 
-* TBD
+// * TBD
 
+[id="configuring-alert-notifications-platform-alertmanager"]
+== Configuring alert notifications with the platform Alertmanager instance
+
+In {product-title}, an administrator can enable alert routing for user-defined projects to use the default platform Alertmanager instance or a separate Alertmanager instance only for user-defined projects. 
+
+The following sections describe the configurations through the default platform Alertmanager instance.
+
+An administrator can enable the platform Alertmanager instance for user-defined alert routing and grant users the `alert-routing-edit` cluster role. After completing these steps, developers and other users can configure custom alerts and alert routing for their user-defined projects.
+
+include::modules/monitoring-enabling-the-platform-alertmanager-instance-for-user-defined-alert-routing.adoc[leveloffset=+2]
+
+include::modules/monitoring-granting-users-permission-to-configure-alert-routing-for-user-defined-projects.adoc[leveloffset=+2]
+
+include::modules/monitoring-creating-alert-routing-for-user-defined-projects.adoc[leveloffset=+2]
+
+// [role="_additional-resources"]
+// .Additional resources
+
+// * TBD
+
+[id="configuring-alert-notifications-separate-alertmanager"]
+== Configuring alert notifications with a separate Alertmanager instance
+
+In {product-title}, an administrator can enable alert routing for user-defined projects to use the default platform Alertmanager instance or a separate Alertmanager instance only for user-defined projects. 
+
+The following sections describe the configurations through the separate Alertmanager instance.
+
+An administrator can enable the separate Alertmanager instance for user-defined alert routing and configure custom alerts and alert routing for the user-defined projects through the `alertmanager-user-workload` secret.
+
+include::modules/monitoring-enabling-a-separate-alertmanager-instance-for-user-defined-alert-routing.adoc[leveloffset=+2]
+
+include::modules/monitoring-configuring-alert-routing-user-defined-alerts.adoc[leveloffset=+2]
+
+// [role="_additional-resources"]
+// .Additional resources
+
+// * TBD
+
+//Configuring different alert receivers for default platform alerts and user-defined alerts
+include::modules/monitoring-configuring-different-alert-receivers-for-default-platform-alerts-and-user-defined-alerts.adoc[leveloffset=+1]
+
+// [role="_additional-resources"]
+// [id="additional-resources_{context}"]
+// == Additional resources
+
+// * TBD

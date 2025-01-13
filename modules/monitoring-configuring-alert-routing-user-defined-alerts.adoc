@@ -3,10 +3,15 @@
 // * observability/monitoring/managing-alerts.adoc
 
 :_mod-docs-content-type: PROCEDURE
-[id="configuring-notifications-for-user-defined-alerts_{context}"]
-= Configuring notifications for user-defined alerts
+[id="configuring-alert-routing-user-defined-alerts_{context}"]
+= Configuring alert routing for user-defined alerts
 
 If you have enabled a separate instance of Alertmanager that is dedicated to user-defined alert routing, you can customize where and how the instance sends notifications by editing the `alertmanager-user-workload` secret in the `openshift-user-workload-monitoring` namespace.
+
+[NOTE]
+====
+All features of a supported version of upstream Alertmanager are also supported in an OpenShift Alertmanager configuration. To check all the configuration options of a supported version of upstream Alertmanager, see link:https://prometheus.io/docs/alerting/0.26/configuration/[Alertmanager configuration] (Prometheus documentation).
+====
 
 .Prerequisites
 
