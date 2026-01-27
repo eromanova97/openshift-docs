@@ -8,7 +8,7 @@ include::_attributes/common-attributes.adoc[]
 toc::[]
 
 [role="_abstract"]
-When you install an {ocp} cluster, you get a set of default alerting rules that are managed by the {cmo-first}. The following table lists those alerting rules, together with their description, severity, and duration.
+When you install an {ocp} cluster, the system includes a set of default alerting rules that are managed by the {cmo-first}. The following table lists those alerting rules, together with their description, severity, and duration.
 
 include::modules/monitoring-alert-reference-for-the-cluster-monitoring-operator.adoc[leveloffset=+1]
 
