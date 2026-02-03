@@ -7,7 +7,7 @@
 = Granting user permissions by using the CLI
 
 [role="_abstract"]
-You can grant users permissions
+Cluster administrators can grant users permissions
 // tag::CPM[]
 for the `openshift-monitoring` project or
 // end::CPM[]
