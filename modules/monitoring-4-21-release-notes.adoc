@@ -43,6 +43,9 @@ The monitoring stack for this release includes the following new features and en
 Thanos Ruler now uses user-workload Prometheus retention by default::
 With this release, if you set retention for user-workload Prometheus, Thanos Ruler automatically inherits the same retention time, unless explicitly configured otherwise. This ensures consistent metric querying across both systems.
 
+The UTF-8 character support is added for metric and label names::
+With this release, support for UTF-8 characters in metric and label names is added to the Prometheus Operator. As a result, you can now use UTF-8 characters in your monitoring configurations without compatibility issues.
+
 // [id="monitoring-4-21-technology-preview-features_{context}"]
 // == Technology Preview features
 
