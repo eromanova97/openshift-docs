@@ -76,14 +76,17 @@ metadata:
   namespace: {namespace-name}
 data:
   config.yaml: |
-    <component>: # <1>
-      logLevel: <log_level> # <2>
+    <component>:
+      logLevel: <log_level>
 ----
-<1> The monitoring stack component for which you are setting a log level.
-Available component values are `{prometheus}`, `{alertmanager}`, `prometheusOperator`, and `{thanos}`.
-<2> The log level to set for the component.
-The available values are `error`, `warn`, `info`, and `debug`.
-The default value is `info`.
++
+where:
+
+`<component>`::
+Specifies the monitoring stack component for which you are setting a log level. Available component values are `{prometheus}`, `{alertmanager}`, `prometheusOperator`, and `{thanos}`.
+
+`<log_level>`::
+Specifies the log level for the component. The available values are `error`, `warn`, `info`, and `debug`. The default value is `info`.
 
 . Save the file to apply the changes. The pods affected by the new configuration are automatically redeployed.
 
