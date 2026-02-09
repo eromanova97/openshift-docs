@@ -26,10 +26,6 @@ Learn about alerting rules that are managed by the {cmo-first} and are included 
 | `ClusterMonitoringOperatorDeprecatedConfig` | info | 1h | The configuration field $labels.field in $labels.configmap was deprecated in $labels.deprecation_version and has no effect.
 | `ClusterMonitoringOperatorReconciliationErrors` | warning | 1h | Errors are occurring during reconciliation cycles. Inspect the cluster-monitoring-operator log for potential root causes.
 | `ConfigReloaderSidecarErrors` | warning | 10m | Errors encountered while the $labels.pod config-reloader sidecar attempts to sync config in $labels.namespace namespace. As a result, configuration for service running in $labels.pod may be stale and cannot be updated anymore.
-| `KubeAggregatedAPIDown` | warning | 15m | Kubernetes aggregated API $labels.name/$labels.name has been only $value% available over the last 10m.
-| `KubeAggregatedAPIErrors` | warning | 10m | Kubernetes aggregated API $labels.instance/$labels.name has reported $labels.reason errors.
-| `KubeAPIDown` | critical | 15m | KubeAPI has disappeared from Prometheus target discovery.
-| `KubeAPITerminatedRequests` | warning | 5m | The kubernetes apiserver has terminated $value of its incoming requests.
 | `KubeClientErrors` | warning | 15m | Kubernetes API server client '$labels.job/$labels.instance' is experiencing $value errors.
 | `KubeContainerWaiting` | warning | 1h | pod/$labels.pod in namespace $labels.namespace on container $labels.container has been in waiting state for longer than 1 hour. (reason: "$labels.reason").
 | `KubeCPUOvercommit` | warning | 10m | Cluster has overcommitted CPU resource requests for Pods by $value CPU shares and cannot tolerate node failure.
@@ -80,7 +76,7 @@ Learn about alerting rules that are managed by the {cmo-first} and are included 
 | `NodeFilesystemFilesFillingUp` | critical | 1h | Filesystem on $labels.device, mounted on $labels.mountpoint, at $labels.instance has only $value% available inodes left and is filling up fast.
 | `NodeFilesystemSpaceFillingUp` | warning | 1h | Filesystem on $labels.device, mounted on $labels.mountpoint, at $labels.instance has only $value% available space left and is filling up.
 | `NodeFilesystemSpaceFillingUp` | critical | 1h | Filesystem on $labels.device, mounted on $labels.mountpoint, at $labels.instance has only $value% available space left and is filling up fast.
-| `NodeHighNumberConntrackEntriesUsed` | warning | 0s | $value of conntrack entries are used.
+| `NodeHighNumberConntrackEntriesUsed` | warning | 0s | $labels.instance $value of conntrack entries are used.
 | `NodeMemoryMajorPagesFaults` | warning | 15m | Memory major pages are occurring at very high rate at $labels.instance, 500 major page faults per second for the last 15 minutes, is currently at $value. Please check that there is enough memory available at this instance.
 | `NodeNetworkInterfaceFlapping` | warning | 2m | Network interface "$labels.device" changing its up status often on node-exporter $labels.namespace/$labels.pod
 | `NodeNetworkReceiveErrs` | warning | 1h | $labels.instance interface $labels.device has encountered $value receive errors in the last two minutes.
