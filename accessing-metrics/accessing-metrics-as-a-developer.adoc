@@ -34,4 +34,4 @@ include::modules/monitoring-reviewing-monitoring-dashboards-developer.adoc[level
 .Additional resources
 
 * xref:../key-concepts/key-concepts.adoc#about-monitoring-dashboards_key-concepts[About monitoring dashboards]
-* link:https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html-single/building_applications/index#monitoring-project-and-application-metrics-using-developer-perspective[Monitoring project and application metrics using the Developer perspective]
+* link:https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html/building_applications/odc-monitoring-project-and-application-metrics-using-developer-perspective[Monitoring project and application metrics using the Developer perspective]
