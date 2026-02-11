@@ -12,7 +12,7 @@ Learn about alerting rules that are managed by the {cmo-first} and are included 
 * In the following alert descriptions, `$value` and `$labels.*` represent value and label data that are substituted with actual values when the alert fires.
 ====
 
-[cols="3,1,1,5",options="header"]
+[cols="4,1,1,4",options="header"]
 |===
 |Name |Severity |Duration |Description
 
@@ -139,7 +139,7 @@ Learn about alerting rules that are managed by the {cmo-first} and are included 
 
 The following alerting rules are included in your cluster if you enable user workload monitoring.
 
-[cols="3,1,1,5",options="header"]
+[cols="4,1,1,4",options="header"]
 |===
 |Name |Severity |Duration |Description
 
