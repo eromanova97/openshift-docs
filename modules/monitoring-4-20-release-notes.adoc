@@ -18,15 +18,15 @@ The changes are included in the following errata advisory:
 
 This release includes the following version updates for monitoring stack components and dependencies:
 
-* Alertmanager to 
+* `Alertmanager` to 
 * Prometheus to 
 * Prometheus Operator to
 * Metrics Server to
-* Thanos to
+* `Thanos` to
 * kube-state-metrics agent to
 * monitoring-plugin to
 * node-exporter agent to
-* prom-label-proxy to
+* PROM-label-proxy to
 
 [id="monitoring-4-20-changes-alerting-rules_{context}"]
 == Changes to alerting rules

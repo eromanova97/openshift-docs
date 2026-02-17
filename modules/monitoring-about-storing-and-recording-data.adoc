@@ -12,11 +12,11 @@ You can configure the monitoring stack by performing any of the following action
 
 * Configure persistent storage:
 ** Protect your metrics and alerting data from data loss by storing them in a persistent volume (PV). As a result, they can survive pods being restarted or recreated.
-** Avoid getting duplicate notifications and losing silences for alerts when the Alertmanager pods are restarted.
-* Modify the retention time and size for Prometheus and Thanos Ruler metrics data.
+** Avoid getting duplicate notifications and losing silences for alerts when the `Alertmanager` pods are restarted.
+* Modify the retention time and size for Prometheus and `Thanos` Ruler metrics data.
 * Configure logging to help you troubleshoot issues with your cluster:
 ifndef::openshift-dedicated,openshift-rosa,openshift-rosa-hcp[]
 ** Configure audit logs for Metrics Server.
 endif::openshift-dedicated,openshift-rosa,openshift-rosa-hcp[]
 ** Set log levels for monitoring.
-** Enable the query logging for Prometheus and Thanos Querier.
+** Enable the query logging for Prometheus and Thanos Query.

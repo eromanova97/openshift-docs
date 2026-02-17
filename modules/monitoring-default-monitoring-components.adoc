@@ -25,7 +25,7 @@ By default, the {ocp} {product-version} monitoring stack includes the following 
 |The {ocp} monitoring stack is based on the Prometheus monitoring system. Prometheus is a time-series database and a rule evaluation engine for metrics. Prometheus sends alerts to Alertmanager for processing.
 
 |Metrics Server
-|The Metrics Server component (MS in the preceding diagram) collects resource metrics and exposes them in the `metrics.k8s.io` Metrics API service for use by other tools and APIs, which frees the core platform Prometheus stack from handling this functionality. Note that with the {ocp} 4.16 release, Metrics Server replaces Prometheus Adapter.
+|The Metrics Server component (Microsoft in the preceding diagram) collects resource metrics and exposes them in the `metrics.k8s.io` Metrics API service for use by other tools and APIs, which frees the core platform Prometheus stack from handling this functionality. Note that with the {ocp} 4.16 release, Metrics Server replaces Prometheus Adapter.
 
 |Alertmanager
 |The Alertmanager service handles alerts received from Prometheus. Alertmanager is also responsible for sending the alerts to external notification systems.
@@ -44,7 +44,7 @@ You can use {cmo-full} config map settings to manage monitoring-plugin resources
 |The node-exporter agent (NE in the preceding diagram) collects metrics about every node in a cluster. The node-exporter agent is deployed on every node.
 
 |Thanos Querier
-|Thanos Querier aggregates and optionally deduplicates core {ocp} metrics and metrics for user-defined projects under a single, multi-tenant interface.
+|Thanos Querier aggregates and optionally deduplicates core {ocp} metrics and metrics for user-defined projects under a single, multitenant interface.
 
 |Telemeter Client
 |Telemeter Client sends a subsection of the data from platform Prometheus instances to Red{nbsp}Hat to enable remote health monitoring for clusters.

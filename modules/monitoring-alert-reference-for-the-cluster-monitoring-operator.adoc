@@ -23,7 +23,7 @@ Learn about alerting rules that are managed by the {cmo-first} and are included 
 | `AlertmanagerFailedToSendAlerts` | warning | 5m | Alertmanager $labels.namespace/$labels.pod failed to send $value of notifications to $labels.integration.
 | `AlertmanagerMembersInconsistent` | warning | 15m | Alertmanager $labels.namespace/$labels.pod has only found $value members of the $labels.job cluster.
 | `AlertmanagerReceiversNotConfigured` | warning | 10m | Alerts are not configured to be sent to a notification system, meaning that you may not be notified in a timely fashion when important failures occur. Check the OpenShift documentation to learn how to configure notifications with Alertmanager.
-| `ClusterMonitoringOperatorDeprecatedConfig` | info | 1h | The configuration field $labels.field in $labels.configmap was deprecated in $labels.deprecation_version and has no effect.
+| `ClusterMonitoringOperatorDeprecatedConfig` | info | 1h | The configuration field $labels.field in $labels.config map was deprecated in $labels.deprecation_version and has no effect.
 | `ClusterMonitoringOperatorReconciliationErrors` | warning | 1h | Errors are occurring during reconciliation cycles. Inspect the cluster-monitoring-operator log for potential root causes.
 | `ConfigReloaderSidecarErrors` | warning | 10m | Errors encountered while the $labels.pod config-reloader sidecar attempts to sync config in $labels.namespace namespace. As a result, configuration for service running in $labels.pod may be stale and cannot be updated anymore.
 | `KubeClientErrors` | warning | 15m | Kubernetes API server client '$labels.job/$labels.instance' is experiencing $value errors.
@@ -39,12 +39,12 @@ Learn about alerting rules that are managed by the {cmo-first} and are included 
 | `KubeHpaReplicasMismatch` | warning | 15m | HPA $labels.namespace/$labels.horizontalpodautoscaler has not matched the desired number of replicas for longer than 15 minutes.
 | `KubeJobFailed` | warning | 15m | Job $labels.namespace/$labels.job_name failed to complete. Removing failed job after investigation should clear this alert.
 | `KubeJobNotCompleted` | warning | 0s | Job $labels.namespace/$labels.job_name is taking more than to complete.
-| `KubeletClientCertificateRenewalErrors` | warning | 15m | Kubelet on node $labels.node has failed to renew its client certificate ($value errors in the last 5 minutes).
-| `KubeletDown` | critical | 15m | Kubelet has disappeared from Prometheus target discovery.
-| `KubeletPlegDurationHigh` | warning | 5m | The Kubelet Pod Lifecycle Event Generator has a 99th percentile duration of $value seconds on node $labels.node.
-| `KubeletPodStartUpLatencyHigh` | warning | 15m | Kubelet Pod startup 99th percentile latency is $value seconds on node $labels.node.
-| `KubeletServerCertificateRenewalErrors` | warning | 15m | Kubelet on node $labels.node has failed to renew its server certificate ($value errors in the last 5 minutes).
-| `KubeletTooManyPods` | info | 15m | Kubelet '$labels.node' is running at $value of its Pod capacity.
+| `kubeletClientCertificateRenewalErrors` | warning | 15m | Kubelet on node $labels.node has failed to renew its client certificate ($value errors in the last 5 minutes).
+| `kubeletDown` | critical | 15m | Kubelet has disappeared from Prometheus target discovery.
+| `kubeletPlegDurationHigh` | warning | 5m | The Kubelet Pod Lifecycle Event Generator has a 99th percentile duration of $value seconds on node $labels.node.
+| `kubeletPodStartUpLatencyHigh` | warning | 15m | Kubelet Pod startup 99th percentile latency is $value seconds on node $labels.node.
+| `kubeletServerCertificateRenewalErrors` | warning | 15m | Kubelet on node $labels.node has failed to renew its server certificate ($value errors in the last 5 minutes).
+| `kubeletTooManyPods` | info | 15m | Kubelet '$labels.node' is running at $value of its Pod capacity.
 | `KubeMemoryOvercommit` | warning | 10m | Cluster has overcommitted memory resource requests for Pods by $value bytes and cannot tolerate node failure.
 | `KubeNodeEviction` | info | 0s | Node $labels.node is evicting Pods due to $labels.eviction_signal. Eviction occurs when eviction thresholds are crossed, typically caused by Pods exceeding RAM/ephemeral-storage limits.
 | `KubeNodeNotReady` | warning | 15m | $labels.node has been unready for more than 15 minutes.
@@ -106,9 +106,9 @@ Learn about alerting rules that are managed by the {cmo-first} and are included 
 | `PrometheusOperatorWatchErrors` | warning | 15m | Errors while performing watch operations in controller $labels.controller in $labels.namespace namespace.
 | `PrometheusOutOfOrderTimestamps` | warning | 1h | Prometheus $labels.namespace/$labels.pod is dropping $value samples/s with timestamps arriving out of order.
 | `PrometheusPossibleNarrowSelectors` | warning | 15m | Queries or/and relabel configs on Prometheus/Thanos $labels.namespace/$labels.pod could be too restrictive.
-| `PrometheusRemoteStorageFailures` | warning | 15m | Prometheus $labels.namespace/$labels.pod failed to send $value% of the samples to $labels.remote_name:$labels.url
-| `PrometheusRemoteWriteBehind` | info | 15m | Prometheus $labels.namespace/$labels.pod remote write is $value behind for $labels.remote_name:$labels.url.
-| `PrometheusRemoteWriteDesiredShards` | warning | 15m | Prometheus $labels.namespace/$labels.pod remote write desired shards calculation wants to run $value shards for queue $labels.remote_name:$labels.url, which is more than the max of $value.
+| `PrometheusRemoteStorageFailures` | warning | 15m | Prometheus $labels.namespace/$labels.pod failed to send $value% of the samples to $labels.remote_name:$labels.URL
+| `PrometheusRemoteWriteBehind` | info | 15m | Prometheus $labels.namespace/$labels.pod remote write is $value behind for $labels.remote_name:$labels.URL.
+| `PrometheusRemoteWriteDesiredShards` | warning | 15m | Prometheus $labels.namespace/$labels.pod remote write desired shards calculation wants to run $value shards for queue $labels.remote_name:$labels.URL, which is more than the max of $value.
 | `PrometheusRuleFailures` | warning | 15m | Prometheus $labels.namespace/$labels.pod has failed to evaluate $value rules in the last 5m.
 | `PrometheusScrapeBodySizeLimitHit` | warning | 15m | Prometheus $labels.namespace/$labels.pod has failed $value scrapes in the last 5m because some targets exceeded the configured body_size_limit.
 | `PrometheusScrapeSampleLimitHit` | warning | 15m | Prometheus $labels.namespace/$labels.pod has failed $value scrapes in the last 5m because some targets exceeded the configured sample_limit.

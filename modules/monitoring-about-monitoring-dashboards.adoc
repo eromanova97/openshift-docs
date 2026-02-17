@@ -22,4 +22,4 @@ As an administrator, you can access dashboards for the core {ocp} components, in
 * Node performance metrics
 
 .Example Prometheus dashboard
-image::monitoring-dashboard-prometheus.png[]
+image::monitoring-dashboard-Prometheus.png[]

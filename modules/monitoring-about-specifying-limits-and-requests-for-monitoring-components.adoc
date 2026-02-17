@@ -10,7 +10,7 @@
 ifndef::openshift-dedicated,openshift-rosa,openshift-rosa-hcp[]
 You can configure resource limits and requests for the following core platform monitoring components:
 
-* Alertmanager
+* `Alertmanager`
 * kube-state-metrics
 * monitoring-plugin
 * node-exporter
@@ -19,7 +19,7 @@ You can configure resource limits and requests for the following core platform m
 * Metrics Server
 * Prometheus Operator and its admission webhook service
 * Telemeter Client
-* Thanos Querier
+* `Thanos Querier`
 
 endif::openshift-dedicated,openshift-rosa,openshift-rosa-hcp[]
 

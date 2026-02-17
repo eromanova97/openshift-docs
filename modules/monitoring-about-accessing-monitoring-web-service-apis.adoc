@@ -10,9 +10,9 @@
 You can directly access web service API endpoints from the command line for the following monitoring stack components:
 
 * Prometheus
-* Alertmanager
-* Thanos Ruler
-* Thanos Querier
+* `Alertmanager`
+* `Thanos Ruler`
+* `Thanos Querier`
 
 [IMPORTANT]
 ====

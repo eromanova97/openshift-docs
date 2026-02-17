@@ -14,12 +14,12 @@ This access only supports using a bearer token for authentication.
 .Prerequisites
 
 * You have deployed your own service, following the "Enabling monitoring for user-defined projects" procedure.
-* You are logged in to an account with the `cluster-monitoring-view` cluster role, which provides permission to access the Thanos Querier API.
-* You are logged in to an account that has permission to get the Thanos Querier API route.
+* You are logged in to an account with the `cluster-monitoring-view` cluster role, which provides permission to access the `Thanos Querier` API.
+* You are logged in to an account that has permission to get the `Thanos Querier` API route.
 +
 [NOTE]
 ====
-If your account does not have permission to get the Thanos Querier API route, a cluster administrator can provide the URL for the route.
+If your account does not have permission to get the `Thanos Querier` API route, a cluster administrator can provide the URL for the route.
 ====
 
 .Procedure
@@ -84,7 +84,7 @@ The output shows the status for each application pod that Prometheus is scraping
 +
 [NOTE]
 ====
-* The formatted example output uses a filtering tool, such as `jq`, to provide the formatted indented JSON. See the link:https://stedolan.github.io/jq/manual/[jq Manual] (jq documentation) for more information about using `jq`.
+* The formatted example output uses a filtering tool, such as `jq`, to provide the formatted indented JSON. See the link:https://stedolan.github.io/jq/manual/[`jq` Manual] (`jq` documentation) for more information about using `jq`.
 
 * The command requests an instant query endpoint of the Thanos Querier service, which evaluates selectors at one point in time.
 ====

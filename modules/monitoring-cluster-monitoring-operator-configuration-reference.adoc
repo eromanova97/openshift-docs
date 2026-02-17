@@ -588,7 +588,7 @@ This setting only applies to user-defined monitoring and is not applicable to co
 
 |tlsConfig|*monv1.SafeTLSConfig|Defines TLS authentication settings for the remote write endpoint.
 
-|url|string|Defines the URL of the remote write endpoint to which samples will be sent.
+|URL|string|Defines the URL of the remote write endpoint to which samples will be sent.
 
 |writeRelabelConfigs|[]monv1.RelabelConfig|Defines the list of remote write relabel configurations.
 
