@@ -45,7 +45,7 @@ ifdef::openshift-dedicated,openshift-rosa,openshift-rosa-hcp[]
 * xref:../accessing-third-party-monitoring-apis.adoc#about-accessing-monitoring-web-service-apis_accessing-third-party-monitoring-apis[Accessing monitoring APIs by using the CLI]
 * xref:../configuring-the-monitoring-stack.adoc#setting-scrape-and-evaluation-intervals-limits-for-user-defined-projects_configuring-the-monitoring-stack[Setting scrape intervals, evaluation intervals, and enforced limits for user-defined projects]
 endif::openshift-dedicated,openshift-rosa,openshift-rosa-hcp[]
-* link:https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html-single/support/index#support-submitting-a-case_getting-support[Submitting a support case]
+* link:https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html/support/getting-support#support-submitting-a-case_getting-support[Submitting a support case]
 
 // Resolving the KubePersistentVolumeFillingUp alert firing for Prometheus
 include::modules/monitoring-resolving-the-kubepersistentvolumefillingup-alert-firing-for-prometheus.adoc[leveloffset=+1]
