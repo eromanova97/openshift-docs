@@ -79,16 +79,14 @@ Silences::
 A silence can be applied to an alert to prevent notifications from being sent when the conditions for an alert are true. You can mute an alert after the initial notification, while you work on resolving the underlying issue.
 
 storage::
-ifndef::openshift-dedicated,openshift-rosa[]
-{ocp} supports many types of storage, both for on-premise and cloud providers.
-endif::openshift-dedicated,openshift-rosa[]
-ifdef::openshift-dedicated[]
-{ocp} supports many types of storage on AWS and GCP.
-endif::openshift-dedicated[]
-ifdef::openshift-rosa[]
-{ocp} supports many types of storage on AWS.
-endif::openshift-rosa[]
-You can manage container storage for persistent and non-persistent data in an {ocp} cluster.
++
+--
+* {ocp} supports many types of storage, both for on-premise and cloud providers.
+* {product-dedicated} supports many types of storage on AWS and GCP.
+* {product-rosa-hcp} supports many types of storage on AWS.
+--
++
+You can manage container storage for persistent and non-persistent data in your cluster.
 
 Thanos Ruler::
 The Thanos Ruler is a rule evaluation engine for Prometheus that is deployed as a separate process. In {ocp}, Thanos Ruler provides rule and alerting evaluation for the monitoring of user-defined projects.

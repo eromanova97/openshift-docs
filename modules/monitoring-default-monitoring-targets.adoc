@@ -7,15 +7,9 @@
 = Default monitoring targets
 
 [role="_abstract"]
-ifndef::openshift-dedicated,openshift-rosa[]
 In addition to the components of the stack itself, the default monitoring stack monitors additional platform components.
 
 The following are examples of monitoring targets:
-endif::openshift-dedicated,openshift-rosa[]
-
-ifdef::openshift-dedicated,openshift-rosa[]
-The following are examples of targets monitored by Red{nbsp}Hat Site Reliability Engineers (SRE) in your {ocp} cluster:
-endif::openshift-dedicated,openshift-rosa[]
 
 * CoreDNS
 * etcd
@@ -25,20 +19,10 @@ endif::openshift-dedicated,openshift-rosa[]
 * Kubernetes API server
 * Kubernetes controller manager
 * Kubernetes scheduler
-ifndef::openshift-rosa[]
 * OpenShift API server
 * OpenShift Controller Manager
 * Operator Lifecycle Manager (OLM)
-endif::openshift-rosa[]
 
-ifdef::openshift-dedicated,openshift-rosa[]
-[NOTE]
-====
-The exact list of targets can vary depending on your cluster capabilities and installed components.
-====
-endif::openshift-dedicated,openshift-rosa[]
-
-ifndef::openshift-dedicated,openshift-rosa[]
 [NOTE]
 ====
 * The exact list of targets can vary depending on your cluster capabilities and installed components.
@@ -48,4 +32,3 @@ link:https://issues.redhat.com/secure/CreateIssueDetails!init.jspa?pid=12332330&
 ====
 
 Other {ocp} framework components might be exposing metrics as well. For details, see their respective documentation.
-endif::openshift-dedicated,openshift-rosa[]

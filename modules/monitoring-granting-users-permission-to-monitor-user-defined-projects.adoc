@@ -9,6 +9,14 @@
 [role="_abstract"]
 As a cluster administrator, you can monitor all core {ocp} and user-defined projects.
 
+[NOTE]
+====
+The following sections about granting users permissions for monitoring for user-defined projects apply to the following distributions:
+
+* {ocp}
+* {product-rosa-hcp}
+====
+
 You can also grant developers and other users different permissions:
 
 * Monitoring user-defined projects
