@@ -9,28 +9,26 @@
 [role="_abstract"]
 In {ocp} and {product-rosa-hcp}, after enabling monitoring for user-defined projects, you can disable it again by setting `enableUserWorkload: false` in the cluster monitoring `ConfigMap` object.
 
+Alternatively, you can remove `enableUserWorkload: true` to disable monitoring for user-defined projects.
+
 [NOTE]
 ====
-Alternatively, you can remove `enableUserWorkload: true` to disable monitoring for user-defined projects.
+This section about disabling monitoring for user-defined projects applies to the following distributions:
+
+* {ocp}
+* {product-rosa-hcp}
 ====
-
-In {product-rosa-hcp} and {product-dedicated}, by default, monitoring for user-defined projects is enabled. If you do not want to use the built-in monitoring stack to monitor user-defined projects, you can disable it.
-
-.Prerequisites
-
-* For {product-rosa} and {product-dedicated}, you logged in to link:https://console.redhat.com/openshift[OpenShift Cluster Manager].
 
 .Procedure
 
-* In {ocp} and {product-rosa-hcp}, perform the following steps:
-.. Edit the `cluster-monitoring-config` `ConfigMap` object:
+. Edit the `cluster-monitoring-config` `ConfigMap` object:
 +
 [source,terminal]
 ----
 $ oc -n openshift-monitoring edit configmap cluster-monitoring-config
 ----
 
-.. Set `enableUserWorkload:` to `false` under `data/config.yaml`:
+. Set `enableUserWorkload:` to `false` under `data/config.yaml`:
 +
 [source,yaml]
 ----
@@ -44,9 +42,11 @@ data:
     enableUserWorkload: false
 ----
 
-.. Save the file to apply the changes. Monitoring for user-defined projects is then disabled automatically.
+. Save the file to apply the changes. Monitoring for user-defined projects is then disabled automatically.
 
-.. Verify that the `prometheus-operator`, `prometheus-user-workload` and `thanos-ruler-user-workload` pods are terminated in the `openshift-user-workload-monitoring` project. This might take a short while:
+.Verification
+
+. Verify that the `prometheus-operator`, `prometheus-user-workload` and `thanos-ruler-user-workload` pods are terminated in the `openshift-user-workload-monitoring` project. This might take a short while:
 +
 [source,terminal]
 ----
@@ -59,18 +59,8 @@ $ oc -n openshift-user-workload-monitoring get pod
 ----
 No resources found in openshift-user-workload-monitoring project.
 ----
-+
+
 [NOTE]
 ====
 The `user-workload-monitoring-config` `ConfigMap` object in the `openshift-user-workload-monitoring` project is not automatically deleted when monitoring for user-defined projects is disabled. This is to preserve any custom configurations that you may have created in the `ConfigMap` object.
 ====
-
-* In {product-rosa} and {product-dedicated}, perform the following steps:
-
-.. From the {cluster-manager} {hybrid-console-second}, select a cluster.
-
-.. Click the *Settings* tab.
-
-.. Click the *Enable user workload monitoring* check box to unselect the option, and then click *Save*.
-+
-User workload monitoring is disabled. The Prometheus, Prometheus Operator, and Thanos Ruler components are stopped in the `openshift-user-workload-monitoring` project.

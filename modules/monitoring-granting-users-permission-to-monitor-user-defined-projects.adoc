@@ -9,6 +9,13 @@
 [role="_abstract"]
 As a cluster administrator, you can monitor all core {ocp} and user-defined projects.
 
+You can also grant developers and other users different permissions:
+
+* Monitoring user-defined projects
+* Configuring the components that monitor user-defined projects
+* Configuring alert routing for user-defined projects
+* Managing alerts and silences for user-defined projects
+
 [NOTE]
 ====
 The following sections about granting users permissions for monitoring for user-defined projects apply to the following distributions:
@@ -16,13 +23,6 @@ The following sections about granting users permissions for monitoring for user-
 * {ocp}
 * {product-rosa-hcp}
 ====
-
-You can also grant developers and other users different permissions:
-
-* Monitoring user-defined projects
-* Configuring the components that monitor user-defined projects
-* Configuring alert routing for user-defined projects
-* Managing alerts and silences for user-defined projects
 
 You can grant the permissions by assigning one of the following monitoring roles or cluster roles:
 

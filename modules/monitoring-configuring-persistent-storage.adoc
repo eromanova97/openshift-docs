@@ -30,7 +30,7 @@ In multi-node clusters, you must configure persistent storage for Prometheus, Al
 [id="persistent-storage-prerequisites_{context}"]
 == Persistent storage prerequisites
 
-* For {ocp}:
+* For {ocp} and {product-rosa-hcp}:
 ** Dedicate sufficient persistent storage to ensure that the disk does not become full.
 ** Use `Filesystem` as the storage type value for the `volumeMode` parameter when you configure the persistent volume.
 +
@@ -43,5 +43,5 @@ For example, some NFS file system implementations are not POSIX compliant.
 If you want to use an NFS file system for storage, verify with the vendor that their NFS implementation is fully POSIX compliant.
 ====
 
-* For {product-rosa-hcp} and {product-dedicated}:
+* For {product-rosa} and {product-dedicated}:
 ** Use the block type of storage.

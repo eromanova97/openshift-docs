@@ -10,11 +10,17 @@
 [role="_abstract"]
 `ServiceMonitor` resources enable you to determine how to use the metrics exposed by a service in user-defined projects. Follow the steps outlined in this procedure if you have created a `ServiceMonitor` resource but cannot see any corresponding metrics in the Metrics UI.
 
+[NOTE]
+====
+This section about investigating why user-defined project metrics are unavailable applies to the following distributions:
+
+* {ocp}
+* {product-rosa-hcp}
+====
+
 .Prerequisites
 
-* You have access to the cluster as a user with the following role:
-** The `cluster-admin` cluster role in {ocp}.
-** The `dedicated-admin` role in {product-rosa-hcp} and {product-dedicated}.
+* You have access to the cluster as a user with the `cluster-admin` cluster role.
 * You have installed the {oc-first}.
 * You have enabled and configured monitoring for user-defined projects.
 * You have created a `ServiceMonitor` resource.

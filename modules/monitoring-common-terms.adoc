@@ -83,7 +83,7 @@ storage::
 --
 * {ocp} supports many types of storage, both for on-premise and cloud providers.
 * {product-dedicated} supports many types of storage on AWS and GCP.
-* {product-rosa-hcp} supports many types of storage on AWS.
+* {product-rosa-hcp} and {product-rosa} support many types of storage on AWS.
 --
 +
 You can manage container storage for persistent and non-persistent data in your cluster.

@@ -14,7 +14,7 @@ Learn about supported configurations for the monitoring stack to ensure stabilit
 Backward compatibility for metrics, recording rules, or alerting rules is not guaranteed.
 ====
 
-In {ocp} and {product-rosa-hcp}, the following actions and configurations are not supported:
+The following actions and configurations are not supported:
 
 * *Creating additional `ServiceMonitor`, `PodMonitor`, and `PrometheusRule` objects in the `openshift-&#42;` and `kube-&#42;` projects.*
 * *Modifying any resources or objects deployed in the `openshift-monitoring` or `openshift-user-workload-monitoring` projects.* The resources created by the monitoring stack are not meant to be used by any other resources, as there are no guarantees about their backward compatibility.
@@ -33,10 +33,3 @@ This procedure is a supported exception to the preceding statement.
 * *Manually deploying monitoring resources into namespaces that have the `openshift.io/cluster-monitoring: "true"` label.* 
 * *Adding the `openshift.io/cluster-monitoring: "true"` label to namespaces.* This label is reserved only for the namespaces with core components and Red{nbsp}Hat certified components.
 * *Installing custom Prometheus instances.* A custom instance is a Prometheus custom resource (CR) managed by the Prometheus Operator.
-
-In {product-rosa} and {product-dedicated}, the following actions and configurations are not supported:
-
-* *Modifying the default platform monitoring components.* You should not modify any of the components defined in the `cluster-monitoring-config` config map. Red Hat SRE uses these components to monitor the core cluster components and Kubernetes services.
-
-* *Installing custom Prometheus instances.* A custom instance is a Prometheus custom resource (CR) managed by the Prometheus Operator.
-

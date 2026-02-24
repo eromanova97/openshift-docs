@@ -18,14 +18,3 @@ User workload monitoring::
 After installing {ocp}, cluster administrators can optionally enable user workload monitoring. By using this feature, cluster administrators, developers, and other users can configure how services and pods are monitored in their own projects.
 
 As a cluster administrator, you can find answers to common problems, such as user metrics unavailability and high consumption of disk space by Prometheus, in "Troubleshooting monitoring issues".
-
-[NOTE]
-====
-In {product-dedicated} and {product-rosa}, when you install your cluster, user workload monitoring is enabled by default. 
-
-With user workload monitoring enabled, you can monitor your own projects in isolation from Red{nbsp}Hat Site Reliability Engineering (SRE) platform metrics. You can monitor your own projects without the need for an additional monitoring solution.
-
-The `dedicated-admin` user has default permissions to configure and access monitoring for user-defined projects.
-
-Optionally, you can disable monitoring for user-defined projects during or after a cluster installation.
-====

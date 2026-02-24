@@ -14,7 +14,7 @@ Learn which user-defined monitoring components can be configured, how to enable 
 * Not all configuration parameters for the monitoring stack are exposed.
 Only the parameters and fields listed in the xref:../config-map-reference/config-map-reference-for-the-cluster-monitoring-operator.adoc#cluster-monitoring-operator-configuration-reference_config-map-reference-for-the-cluster-monitoring-operator[Config map reference for the {cmo-full}] are supported for configuration.
 
-* In {product-rosa-hcp} and {product-dedicated}, the monitoring stack imposes additional resource requirements. Consult the computing resources recommendations in link:https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html-single/scalability_and_performance/index#scaling-cluster-monitoring-operator_recommended-infrastructure-practices[Scaling the {cmo-full}] and verify that you have sufficient resources.
+* In {ocp} and {product-rosa-hcp}, the monitoring stack imposes additional resource requirements. Consult the computing resources recommendations in link:https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html-single/scalability_and_performance/index#scaling-cluster-monitoring-operator_recommended-infrastructure-practices[Scaling the {cmo-full}] and verify that you have sufficient resources.
 ====
 
 // Configurable monitoring components
@@ -70,3 +70,5 @@ include::modules/monitoring-excluding-a-user-defined-project-from-monitoring.ado
 
 // Disabling monitoring for user-defined projects
 include::modules/monitoring-disabling-monitoring-for-user-defined-projects.adoc[leveloffset=+1]
+
+include::modules/sd-disabling-monitoring-for-user-defined-projects.adoc[leveloffset=+1]

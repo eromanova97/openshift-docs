@@ -31,9 +31,9 @@ Using attributes that are bound to a limited set of possible values reduces the 
 
 .Prerequisites
 
-* For {ocp}:
+* For {ocp} and {product-rosa-hcp}:
 ** You have access to the cluster as a user with the `cluster-admin` cluster role.
-* For {product-rosa-hcp} and {product-dedicated}:
+* For {product-rosa} and {product-dedicated}:
 ** You have access to the cluster as a user with the `dedicated-admin` role.
 * You have installed the {oc-first}.
 

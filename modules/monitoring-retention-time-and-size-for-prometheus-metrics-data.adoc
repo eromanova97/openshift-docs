@@ -10,8 +10,8 @@
 By default, Prometheus retains metrics data for the following durations:
 
 * *Core platform monitoring*:
-** {ocp}: 15 days
-** {product-rosa-hcp} and {product-dedicated}: 11 days
+** {ocp} and {product-rosa-hcp}: 15 days
+** {product-rosa} and {product-dedicated}: 11 days
 * *Monitoring for user-defined projects*: 24 hours
 
 You can modify the retention time for the Prometheus instance to change how soon the data is deleted. You can also set the maximum amount of disk space the retained metrics data uses. If the data reaches this size limit, Prometheus deletes the oldest data first until the disk space used is again below the limit.
