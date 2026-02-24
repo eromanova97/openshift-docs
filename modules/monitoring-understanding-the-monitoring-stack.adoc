@@ -12,7 +12,7 @@ The monitoring stack includes the following components:
 
 Default platform monitoring components::
 
-A set of platform monitoring components are installed in the `openshift-monitoring` project by default during an {ocp} installation. This provides monitoring for core cluster components including Kubernetes services. The default monitoring stack also enables remote health monitoring for clusters.
+A set of platform monitoring components are installed in the `openshift-monitoring` project by default during a cluster installation. This provides monitoring for core cluster components including Kubernetes services. The default monitoring stack also enables remote health monitoring for clusters.
 +
 You can see these components in the *Installed by default* section in the following diagram.
 +
@@ -32,4 +32,4 @@ You can see these components in the *User* section in the following diagram.
 In {product-rosa} and {product-dedicated}, monitoring is enabled by default for user-defined projects.
 ====
 
-image:monitoring-architecture.png[{ocp} monitoring architecture]
+image:monitoring-architecture.png[The monitoring stack architecture]

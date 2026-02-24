@@ -7,19 +7,19 @@
 = Reviewing monitoring dashboards as a cluster administrator
 
 [role="_abstract"]
-As an administrator, you can view dashboards relating to core {ocp} cluster components.
+As an administrator, you can view dashboards relating to core cluster components.
 
 include::snippets/unified-perspective-web-console.adoc[]
 
 .Prerequisites
 
 * You have access to the cluster as a user with the following role:
-** The `cluster-admin` cluster role in {ocp}.
-** The `dedicated-admin` role in {product-rosa-hcp} and {product-dedicated}.
+** The `cluster-admin` cluster role in {ocp} and {product-rosa-hcp}.
+** The `dedicated-admin` role in {product-rosa} and {product-dedicated}.
 
 .Procedure
 
-. In the {ocp} web console, go to *Observe* -> *Dashboards*.
+. In the web console, go to *Observe* -> *Dashboards*.
 
 . Choose a dashboard in the *Dashboard* list. Some dashboards, such as *etcd* and *Prometheus* dashboards, produce additional sub-menus when selected.
 

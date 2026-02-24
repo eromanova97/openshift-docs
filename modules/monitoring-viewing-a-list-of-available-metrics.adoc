@@ -19,8 +19,8 @@ This section about viewing a list of available metrics applies to the following 
 
 .Prerequisites
 * You are a cluster administrator, or you have access to the cluster as a user with the `cluster-monitoring-view` cluster role.
-* You have installed the {ocp} CLI (`oc`).
-* You have obtained the {ocp} API route for Thanos Querier.
+* You have installed the {oc-first}.
+* You have obtained the cluster API route for Thanos Querier.
 * You are able to get a bearer token by using the `oc whoami -t` command.
 +
 [IMPORTANT]
@@ -30,7 +30,7 @@ You can only use bearer token authentication to access the Thanos Querier API ro
 
 .Procedure
 
-. If you have not obtained the {ocp} API route for Thanos Querier, run the following command:
+. If you have not obtained the cluster API route for Thanos Querier, run the following command:
 +
 [source,terminal]
 ----
@@ -44,4 +44,4 @@ $ oc get routes -n openshift-monitoring thanos-querier -o jsonpath='{.status.ing
 $ curl -k -H "Authorization: Bearer $(oc whoami -t)" https://<thanos_querier_route>/api/v1/metadata
 ----
 +
-Replace `<thanos_querier_route>` with the {ocp} API route for Thanos Querier.
+Replace `<thanos_querier_route>` with the cluster API route for Thanos Querier.

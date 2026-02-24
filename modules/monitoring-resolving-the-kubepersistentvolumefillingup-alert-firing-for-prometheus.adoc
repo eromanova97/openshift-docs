@@ -25,8 +25,8 @@ To address this issue, you can remove Prometheus time-series database (TSDB) blo
 .Prerequisites
 
 * You have access to the cluster as a user with the following role:
-** The `cluster-admin` cluster role in {ocp}.
-** The `dedicated-admin` role in {product-rosa-hcp} and {product-dedicated}.
+** The `cluster-admin` cluster role in {ocp} and {product-rosa-hcp}.
+** The `dedicated-admin` role in {product-rosa} and {product-dedicated}.
 * You have installed the {oc-first}.
 
 .Procedure

@@ -1,15 +1,15 @@
 :_mod-docs-content-type: ASSEMBLY
 include::_attributes/common-attributes.adoc[]
 [id="about-ocp-monitoring"]
-= About {ocp} monitoring
+= About {product-title-lowercase}
 :context: about-ocp-monitoring
 
 toc::[]
 
 [role="_abstract"]
-Learn how the {ocp} provides built-in monitoring for your cluster, including metrics, alerts, and dashboards powered by the link:https://prometheus.io/[Prometheus] open source project and its ecosystem.
+Learn about built-in monitoring for your cluster, including metrics, alerts, and dashboards powered by the link:https://prometheus.io/[Prometheus] open source project and its ecosystem.
 
-//{ocp} monitoring stack overview
+//monitoring stack overview
 include::modules/monitoring-stack-overview.adoc[leveloffset=+1]
 
 include::modules/sd-monitoring-stack-overview.adoc[leveloffset=+1]

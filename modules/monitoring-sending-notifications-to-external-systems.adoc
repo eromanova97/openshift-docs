@@ -8,7 +8,7 @@
 = Sending notifications to external systems
 
 [role="_abstract"]
-In {ocp} {product-version}, firing alerts can be viewed in the Alerting UI. Alerts are not configured by default to be sent to any notification systems. You can configure {ocp} to send alerts to the following receiver types:
+You can view firing alerts in the Alerting UI. Alerts are not configured by default to be sent to any notification systems. You can configure your cluster to send alerts to the following receiver types:
 
 * PagerDuty
 * Webhook
@@ -20,4 +20,4 @@ Routing alerts to receivers enables you to send timely notifications to the appr
 
 *_Checking that alerting is operational by using the watchdog alert_*
 
-{ocp} monitoring includes a watchdog alert that fires continuously. Alertmanager repeatedly sends watchdog alert notifications to configured notification providers. The provider is usually configured to notify an administrator when it stops receiving the watchdog alert. This mechanism helps you quickly identify any communication issues between Alertmanager and the notification provider.
+The monitoring stack includes a watchdog alert that fires continuously. Alertmanager repeatedly sends watchdog alert notifications to configured notification providers. The provider is usually configured to notify an administrator when it stops receiving the watchdog alert. This mechanism helps you quickly identify any communication issues between Alertmanager and the notification provider.

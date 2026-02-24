@@ -8,8 +8,8 @@
 = Accessing the Alerting UI
 
 [role="_abstract"]
-The Alerting UI is accessible in the {ocp} web console.
+You can access the Alerting UI througweb console.
 
 .Procedure
 
-* In the {ocp} web console, go to *Observe* -> *Alerting*. The three main pages in the Alerting UI in this perspective are the *Alerts*, *Silences*, and *Alerting rules* pages.
+* In the web console, go to *Observe* -> *Alerting*. The three main pages in the Alerting UI in this perspective are the *Alerts*, *Silences*, and *Alerting rules* pages.

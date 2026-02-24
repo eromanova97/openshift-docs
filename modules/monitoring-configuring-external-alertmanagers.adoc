@@ -22,10 +22,10 @@
 // end::UWM[]
 
 [role="_abstract"]
-The {ocp} monitoring stack includes a local Alertmanager instance that routes alerts from Prometheus.
+The monitoring stack includes a local Alertmanager instance that routes alerts from Prometheus.
 
 // tag::CPM[]
-You can add external Alertmanager instances to route alerts for core {ocp} projects.
+You can add external Alertmanager instances to route alerts for core projects.
 // end::CPM[]
 // tag::UWM[]
 You can add external Alertmanager instances to route alerts for user-defined projects.

@@ -7,7 +7,7 @@
 = Disabling monitoring for user-defined projects
 
 [role="_abstract"]
-In {ocp} and {product-rosa-hcp}, after enabling monitoring for user-defined projects, you can disable it again by setting `enableUserWorkload: false` in the cluster monitoring `ConfigMap` object.
+After enabling monitoring for user-defined projects, you can disable it again by setting `enableUserWorkload: false` in the cluster monitoring `ConfigMap` object.
 
 Alternatively, you can remove `enableUserWorkload: true` to disable monitoring for user-defined projects.
 

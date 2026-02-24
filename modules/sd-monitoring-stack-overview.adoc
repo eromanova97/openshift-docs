@@ -15,7 +15,7 @@ The `dedicated-admin` user has default permissions to configure and access monit
 
 Optionally, you can disable monitoring for user-defined projects during or after a cluster installation. You can also exclude individual projects from user workload monitoring.
 
-[id="monitoring-stack-overview_{context}"]
+[id="sd-support-considerations_{context}"]
 == Support considerations
 
 In {product-rosa} and {product-dedicated}, the following actions and configurations are not supported:
